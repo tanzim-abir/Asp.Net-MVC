@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\c# class\\class\\class-3\\solutionclass3\\class3\\class3.csproj": {}
+    "C:\\c# class\\class\\class-3\\class3\\class3\\class3.csproj": {}
   },
   "projects": {
-    "C:\\c# class\\class\\class-3\\solutionclass3\\class3\\class3.csproj": {
+    "C:\\c# class\\class\\class-3\\class3\\class3\\class3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\c# class\\class\\class-3\\solutionclass3\\class3\\class3.csproj",
+        "projectUniqueName": "C:\\c# class\\class\\class-3\\class3\\class3\\class3.csproj",
         "projectName": "class3",
-        "projectPath": "C:\\c# class\\class\\class-3\\solutionclass3\\class3\\class3.csproj",
+        "projectPath": "C:\\c# class\\class\\class-3\\class3\\class3\\class3.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\c# class\\class\\class-3\\solutionclass3\\class3\\obj\\",
+        "outputPath": "C:\\c# class\\class\\class-3\\class3\\class3\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
