@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace class3
+namespace ConsoleApp
 {
     class Program
     {

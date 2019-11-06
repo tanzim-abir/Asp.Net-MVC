@@ -695,11 +695,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\c# class\\class\\class-3\\class3\\class3\\class3.csproj",
-      "projectName": "class3",
-      "projectPath": "C:\\c# class\\class\\class-3\\class3\\class3\\class3.csproj",
+      "projectUniqueName": "C:\\c# class\\class\\class-3\\ConsoleApp\\ConsoleApp\\ConsoleApp.csproj",
+      "projectName": "ConsoleApp",
+      "projectPath": "C:\\c# class\\class\\class-3\\ConsoleApp\\ConsoleApp\\ConsoleApp.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\c# class\\class\\class-3\\class3\\class3\\obj\\",
+      "outputPath": "C:\\c# class\\class\\class-3\\ConsoleApp\\ConsoleApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
