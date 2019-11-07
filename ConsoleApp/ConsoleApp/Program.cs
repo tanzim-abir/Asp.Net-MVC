@@ -15,7 +15,7 @@ namespace ConsoleApp
 
             while (year < 1971 || year > 2019)
             {
-                Console.WriteLine("sorry, you provide incorrect month");
+                Console.WriteLine("sorry, you provide incorrect year");
                 year = int.Parse(Console.ReadLine());
             }
 
