@@ -5,7 +5,7 @@ namespace ConsoleApp
     class Program
     {
         static void Main(string[] args)
-        {
+       /* {
             int year;
             int month;
             int day;
@@ -111,12 +111,66 @@ namespace ConsoleApp
             Console.ReadLine();
         }
     }
+}*/
+
+
+{
+            int year, month, date;
+string str = "";
+Console.WriteLine("Please enter year: ");
+            while(true)
+            {
+                year = Convert.ToInt32(Console.ReadLine());
+                if(year<1971 || year>2019) Console.WriteLine("Sorry, you provide an invalid year. Try again!");
+                else break; 
+            }
+            Console.WriteLine("Please enter month: ");
+            while (true)
+            {
+                month = Convert.ToInt32(Console.ReadLine());
+                if (month< 1 || month> 12) Console.WriteLine("Sorry, you provide an invalid month. Try again!");
+                else {
+                    if (month == 1) str = "Jan";
+                    else if (month == 2) str = "Feb";
+                    else if (month == 3) str = "Mar";
+                    else if (month == 4) str = "Apr";
+                    else if (month == 5) str = "May";
+                    else if (month == 6) str = "Jun";
+                    else if (month == 7) str = "Jul";
+                    else if (month == 8) str = "Aug";
+                    else if (month == 9) str = "Sep";
+                    else if (month == 10) str = "Oct";
+                    else if (month == 11) str = "Nov";
+                    else if (month == 12) str = "Dec";
+                    break; 
+                }
+            }
+            Console.WriteLine("Please enter day: ");
+            while (true)
+            {
+                date = Convert.ToInt32(Console.ReadLine());
+                if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12)
+                {
+                    if (date< 1 || date> 31) Console.WriteLine("Sorry, you provide an invalid day. Try again!");
+                    else break;
+                }
+                else if (month == 4 || month == 6 || month == 9 || month == 11)
+                {
+                    if (date< 1 || date> 30) Console.WriteLine("Sorry, you provide an invalid day. Try again!");
+                    else break;
+                }
+                else if (month == 2)
+                {
+                    if (date< 1 || date> 28) Console.WriteLine("Sorry, you provide an invalid day. Try again!");
+                    else break;
+                }
+            }
+            //DateTime d = new DateTime(year,month,date);
+            //Console.WriteLine("Your Date is: "+d);
+            Console.WriteLine("Your Date is: "+date+"-"+str+"-"+year%100);
+        }
+    }
 }
-
-
-
-
-
 
 
 

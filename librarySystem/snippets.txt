@@ -1,0 +1,88 @@
+﻿                //foreach (var item in _bookList)
+                //{
+                //    Console.WriteLine("book code : " + item.Code);
+                //    Console.WriteLine("book name : " + item.Name);
+                //    Console.WriteLine("book author : " + item.Author);
+                //    Console.WriteLine("amount : " + item.Stock);
+                //    Console.WriteLine("============================");
+                //}
+
+
+                //foreach (var item in _bookList)
+            //{
+            //    Console.WriteLine("total book type : "+_bookList.Count);
+            //    Console.WriteLine("book code : " + item.Code +" ; book name : "+ item.Name +" ; book author : "+" ; author name : "+ item.Author +" ; amount : "+ item.Stock);
+            //}
+
+
+            public void BorrowBook()
+        {
+            Console.WriteLine("enter book code : ");
+            string borrowCode = Console.ReadLine();
+
+            Book searchBook = _bookList.Where(x => x.Code == borrowCode).FirstOrDefault();
+  
+            if (searchBook != null)
+            {
+                Console.WriteLine("enter amount : ");
+                int borrowStock = Convert.ToInt32(Console.ReadLine());
+                if (borrowStock <= searchBook.Stock)
+                {
+                    //searchBook.BorrowBook(borrowStock);
+                    var a = searchBook.Stock -= borrowStock;
+
+                    string connectionString = "Server=FERTILE-FIELD\\SQLEXPRESS;Database=libraryDB;Integrated Security=True;";
+                    string sql = "UPDATE Books SET Stock = '"+a+"' WHERE Code = '"+searchBook.Code+"'; ";
+
+                    var connection = new SqlConnection(connectionString);
+                    var command = new SqlCommand(sql, connection);
+
+                    connection.Open();
+                    command.ExecuteNonQuery();
+                    connection.Close();
+                    command.Dispose();
+                    connection.Dispose();
+
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.WriteLine("book borrowed successfully");
+                    Console.ResetColor();
+                }
+                else
+                {
+                    Console.WriteLine("insuffiucient stock ;");
+                    Console.WriteLine("stock available : " + searchBook.Stock + " pc");
+                }
+
+            }
+            else
+            {
+                Console.WriteLine("book is not available");
+            }
+
+        }
+
+
+
+
+{
+                {
+                    string sql = "DELETE FROM Books WHERE Code = '" + borrowCode + "'; ";
+
+                    var connection = new SqlConnection(connectionString);
+                    var command = new SqlCommand(sql, connection);
+
+                    connection.Open();
+                    command.ExecuteNonQuery();
+                    connection.Close();
+                    command.Dispose();
+                    connection.Dispose();
+                }
+            }
+
+
+                            //var table = new ConsoleTable("code", "name", "author", "stock");
+                //foreach (var item in Database())
+                //{
+                //    table.AddRow(item.Code, item.Name, item.Author, item.Stock);
+                //}
+                //table.Write();
