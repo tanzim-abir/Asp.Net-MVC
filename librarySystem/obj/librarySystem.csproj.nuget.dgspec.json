@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\c# class\\class\\library system\\librarySystem\\librarySystem.csproj": {}
+    "C:\\c# class\\class\\class-3\\librarySystem\\librarySystem.csproj": {}
   },
   "projects": {
-    "C:\\c# class\\class\\library system\\librarySystem\\librarySystem.csproj": {
+    "C:\\c# class\\class\\class-3\\librarySystem\\librarySystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\c# class\\class\\library system\\librarySystem\\librarySystem.csproj",
+        "projectUniqueName": "C:\\c# class\\class\\class-3\\librarySystem\\librarySystem.csproj",
         "projectName": "librarySystem",
-        "projectPath": "C:\\c# class\\class\\library system\\librarySystem\\librarySystem.csproj",
+        "projectPath": "C:\\c# class\\class\\class-3\\librarySystem\\librarySystem.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\c# class\\class\\library system\\librarySystem\\obj\\",
+        "outputPath": "C:\\c# class\\class\\class-3\\librarySystem\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
