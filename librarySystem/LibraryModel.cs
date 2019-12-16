@@ -6,7 +6,7 @@ using ConsoleTables;
 
 namespace librarySystem
 {
-    class LibraryModel //: ILibrary
+    class LibraryModel : ILibrary
     {
         public IList<Book> _bookList;
 
@@ -34,8 +34,6 @@ namespace librarySystem
                             string name = reader["Name"].ToString();
                             string author = reader["Author"].ToString();
                             int stock = Convert.ToInt32(reader["Stock"].ToString());
-                            //Book b = new Book(code, name, author, stock);
-                            //_bookList.Add(b);
                             Book b = new Book(code, name, author, stock);
                             bookList.Add(b);
                         }
@@ -54,7 +52,6 @@ namespace librarySystem
             string author = Console.ReadLine();
             Console.WriteLine("enter amount : ");
             int stock = Convert.ToInt32(Console.ReadLine());
-            // code, name, author, stock constructorer nam charao onno nameo rakha jabe, karon constructor parameter shudhu data type o number of parameter match kore  
 
             Book b1 = new Book(code, name, author, stock);
             _bookList.Add(b1);
@@ -95,7 +92,6 @@ namespace librarySystem
                 int borrowStock = Convert.ToInt32(Console.ReadLine());
                 if (borrowStock <= searchBook.Stock)
                 {
-                    //searchBook.BorrowBook(borrowStock);
                     var updateStock = searchBook.Stock -= borrowStock;
 
                     string connectionString = "Server=FERTILE-FIELD\\SQLEXPRESS;Database=libraryDB;Integrated Security=True;";
@@ -141,7 +137,6 @@ namespace librarySystem
                 if (returnStock <= searchBook.Stock)
                 {
                     var updateStock = searchBook.Stock += returnStock;
-                    //searchBook.AddBook(returnStock);
 
                     string connectionString = "Server=FERTILE-FIELD\\SQLEXPRESS;Database=libraryDB;Integrated Security=True;";
                     string sql = "UPDATE Books SET Stock = '" + updateStock + "' WHERE Code = '" + searchBook.Code + "'; ";
