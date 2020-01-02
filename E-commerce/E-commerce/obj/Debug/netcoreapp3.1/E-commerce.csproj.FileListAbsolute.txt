@@ -1,0 +1,11 @@
+C:\c# class\class\E-commerce\E-commerce\bin\Debug\netcoreapp3.1\E-commerce.exe
+C:\c# class\class\E-commerce\E-commerce\bin\Debug\netcoreapp3.1\E-commerce.deps.json
+C:\c# class\class\E-commerce\E-commerce\bin\Debug\netcoreapp3.1\E-commerce.runtimeconfig.json
+C:\c# class\class\E-commerce\E-commerce\bin\Debug\netcoreapp3.1\E-commerce.runtimeconfig.dev.json
+C:\c# class\class\E-commerce\E-commerce\bin\Debug\netcoreapp3.1\E-commerce.dll
+C:\c# class\class\E-commerce\E-commerce\bin\Debug\netcoreapp3.1\E-commerce.pdb
+C:\c# class\class\E-commerce\E-commerce\obj\Debug\netcoreapp3.1\E-commerce.csprojAssemblyReference.cache
+C:\c# class\class\E-commerce\E-commerce\obj\Debug\netcoreapp3.1\E-commerce.AssemblyInfoInputs.cache
+C:\c# class\class\E-commerce\E-commerce\obj\Debug\netcoreapp3.1\E-commerce.AssemblyInfo.cs
+C:\c# class\class\E-commerce\E-commerce\obj\Debug\netcoreapp3.1\E-commerce.dll
+C:\c# class\class\E-commerce\E-commerce\obj\Debug\netcoreapp3.1\E-commerce.pdb
