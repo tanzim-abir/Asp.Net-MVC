@@ -62,12 +62,26 @@ namespace librarySystem
             int bookStock = b1.Stock;
 
             string connectionString = "Server=FERTILE-FIELD\\SQLEXPRESS;Database=libraryDB;Integrated Security=True;";
-            string sql = "INSERT INTO Books (Code,Name,Author,Stock) VALUES('"+ bookCode + "' , '" + bookName + "', '" + bookAuthor + "'," + bookStock + ");";
+            string sql = "INSERT INTO Books (Code,Name,Author,Stock) VALUES(@1bookCode,@2bookName,@3bookAuthor,@4bookStock);";
 
             var connection = new SqlConnection(connectionString);
+
             var command = new SqlCommand(sql, connection);
+            var NameA = new SqlParameter("@1bookCode", System.Data.SqlDbType.VarChar, 15);
+            var NameB = new SqlParameter("@2bookName", System.Data.SqlDbType.VarChar, 15);
+            var NameC = new SqlParameter("@3bookAuthor", System.Data.SqlDbType.VarChar, 15);
+            var NameD = new SqlParameter("@4bookStock", System.Data.SqlDbType.Int, 10);
+            NameA.Value = bookCode;
+            NameB.Value = bookName;
+            NameC.Value = bookAuthor;
+            NameD.Value = bookStock;
+            command.Parameters.Add(NameA);
+            command.Parameters.Add(NameB);
+            command.Parameters.Add(NameC);
+            command.Parameters.Add(NameD);
 
             connection.Open();
+ 
             command.ExecuteNonQuery();
             connection.Close();
             command.Dispose();
@@ -84,7 +98,7 @@ namespace librarySystem
             Console.WriteLine("enter book code : ");
             string borrowCode = Console.ReadLine();
 
-            Book searchBook = _bookList.Where(x => x.Code == borrowCode).FirstOrDefault();
+            Book searchBook = _bookList.Where(x => x.Code.Trim() == borrowCode.Trim()).FirstOrDefault();
 
             if (searchBook != null)
             {
