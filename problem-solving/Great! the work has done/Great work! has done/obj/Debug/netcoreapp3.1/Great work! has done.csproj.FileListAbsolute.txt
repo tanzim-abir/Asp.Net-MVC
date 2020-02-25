@@ -1,0 +1,11 @@
+C:\Users\User\Desktop\devskill\Code practice\Great! the work has done\Great work! has done\bin\Debug\netcoreapp3.1\Great work! has done.exe
+C:\Users\User\Desktop\devskill\Code practice\Great! the work has done\Great work! has done\bin\Debug\netcoreapp3.1\Great work! has done.deps.json
+C:\Users\User\Desktop\devskill\Code practice\Great! the work has done\Great work! has done\bin\Debug\netcoreapp3.1\Great work! has done.runtimeconfig.json
+C:\Users\User\Desktop\devskill\Code practice\Great! the work has done\Great work! has done\bin\Debug\netcoreapp3.1\Great work! has done.runtimeconfig.dev.json
+C:\Users\User\Desktop\devskill\Code practice\Great! the work has done\Great work! has done\bin\Debug\netcoreapp3.1\Great work! has done.dll
+C:\Users\User\Desktop\devskill\Code practice\Great! the work has done\Great work! has done\bin\Debug\netcoreapp3.1\Great work! has done.pdb
+C:\Users\User\Desktop\devskill\Code practice\Great! the work has done\Great work! has done\obj\Debug\netcoreapp3.1\Great work! has done.csprojAssemblyReference.cache
+C:\Users\User\Desktop\devskill\Code practice\Great! the work has done\Great work! has done\obj\Debug\netcoreapp3.1\Great work! has done.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\devskill\Code practice\Great! the work has done\Great work! has done\obj\Debug\netcoreapp3.1\Great work! has done.AssemblyInfo.cs
+C:\Users\User\Desktop\devskill\Code practice\Great! the work has done\Great work! has done\obj\Debug\netcoreapp3.1\Great work! has done.dll
+C:\Users\User\Desktop\devskill\Code practice\Great! the work has done\Great work! has done\obj\Debug\netcoreapp3.1\Great work! has done.pdb
